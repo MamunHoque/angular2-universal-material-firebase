@@ -1,0 +1,33 @@
+<md-sidenav-container fullscreen>
+  <md-sidenav #sidenav mode="push" class="app-sidenav">
+    <md-toolbar color="primary" >
+      <span class="toolbar-filler"></span>
+      <button md-icon-button (click)="sidenav.toggle()" class="md-icon-button sidenav-toggle-button" [hidden]="!sidenav.opened">
+        <md-icon aria-label="Menu" class="material-icons">close</md-icon>
+      </button>
+    </md-toolbar>
+    <md-nav-list>
+      <a md-list-item class="sidenav-link" [routerLink]="['/home']" (click)="sidenav.toggle()">
+        <md-icon md-list-icon>account_balance</md-icon>
+        <span class="title" md-line>Home</span>
+        <span md-line class="secondary">About this Starter Repo</span>
+      </a>
+      <a md-list-item class="sidenav-link" [routerLink]="['/examples']" (click)="sidenav.toggle()">
+        <md-icon md-list-icon>android</md-icon>
+        <span class="title" md-line>Examples</span>
+        <span md-line class="secondary">Material Design Examples</span>
+      </a>
+    </md-nav-list>
+  </md-sidenav>
+  <md-toolbar id="appToolbar" color="primary">
+    <button md-icon-button (click)="sidenav.toggle()" class="md-icon-button sidenav-toggle-button" [hidden]="sidenav.opened">
+      <md-icon aria-label="Menu" class="material-icons">menu</md-icon>
+    </button>
+    <h1 class="component-title">
+      <a class="title-link">{{title}}</a>
+    </h1>
+    <span class="toolbar-filler"></span>   
+      <button md-button (click)="goToGithub()">GitHub</button>
+  </md-toolbar>
+  <router-outlet></router-outlet>
+</md-sidenav-container>
