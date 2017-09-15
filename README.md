@@ -1,6 +1,6 @@
 # Angular Universal with Material and Firebase Server Side Rendering
 
-### Current status: Server rendering is working on one route.
+### Current status: Server rendering is working locally with all material components. Need to create Firebase Cloud Function that serves the application.
 To do:
 
 * ~~Create base application using Angular-Cli~~
