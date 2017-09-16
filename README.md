@@ -39,6 +39,8 @@ npm run server
 
 ![firebase config](https://firebasestorage.googleapis.com/v0/b/angular-universal-material.appspot.com/o/firebaseconfig.jpg?alt=media)
 
+* Initialize a firebase app in your local environment using [these instructions](https://firebase.google.com/docs/hosting/deploying)
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
