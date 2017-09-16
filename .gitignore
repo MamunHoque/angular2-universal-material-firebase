@@ -9,6 +9,9 @@
 
 # dependencies
 /node_modules
+/functions/node_modules
+/functions/npm-debug.log
+/build/myFirebaseConfig.js
 
 # IDEs and editors
 /.idea

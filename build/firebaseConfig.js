@@ -1,0 +1,1 @@
+module.exports = `add your firebase config here`;
