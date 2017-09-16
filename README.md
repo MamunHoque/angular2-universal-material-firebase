@@ -29,6 +29,16 @@ npm run build-all
 npm run server
 ```
 
+## Connecting the app to your FireBase project
+
+* Create a new project in Firebase
+* On the project overview page, choose "Add Firebase to your web app"
+
+![firebase hosting](https://firebasestorage.googleapis.com/v0/b/angular-universal-material.appspot.com/o/Capture.PNG?alt=media)
+* Copy and paste the firebase config code in to the `/build/firebaseConfig.js` file as a string.
+
+![firebase config](https://firebasestorage.googleapis.com/v0/b/angular-universal-material.appspot.com/o/firebaseconfig.jpg?alt=media)
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
