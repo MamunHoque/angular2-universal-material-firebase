@@ -1,6 +1,7 @@
 # Angular Universal with Material and Firebase Server Side Rendering
 
-### Current status: Server rendering is working locally with all material components. Need to create Firebase Cloud Function that serves the application.
+### Current status: application is working. See the server rendered Angular 2/4 with material [here](https://angular-universal-material.firebaseapp.com)
+
 To do:
 
 * ~~Create base application using Angular-Cli~~
@@ -10,7 +11,7 @@ To do:
 * ~~Add server.js file to serve rendered application to client~~
 * ~~Add Material components.~~
 * ~~Add functionality to handle multiple server-rendered routes.~~
-* Convert server.js file to work with Cloud Functions for Firebase.
+* ~~Convert server.js file to work with Cloud Functions for Firebase.~~
 
 The goal of this project is to have a good starting point to begin working with Angular, Material, Universal and server side rendering using Cloud Functions for Firebase.
 
@@ -27,6 +28,7 @@ cd angular2-universal-material-firebase
 npm install
 npm run build-all
 npm run server
+copy the `dist` and `dist-server` folders to the functions directory
 ```
 
 ## Connecting the app to your FireBase project
@@ -40,6 +42,8 @@ npm run server
 ![firebase config](https://firebasestorage.googleapis.com/v0/b/angular-universal-material.appspot.com/o/firebaseconfig.jpg?alt=media)
 
 * Initialize a firebase app in your local environment using [these instructions](https://firebase.google.com/docs/hosting/deploying)
+
+* After you deploy, you can visit the url in your firebase hosting account to see the server rendered version.
 
 ## Code scaffolding
 

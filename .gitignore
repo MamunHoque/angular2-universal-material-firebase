@@ -11,6 +11,8 @@
 /node_modules
 /functions/node_modules
 /functions/npm-debug.log
+/functions/dist
+/functions/dist-server
 /build/myFirebaseConfig.js
 
 # IDEs and editors
